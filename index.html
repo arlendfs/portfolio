@@ -9,7 +9,7 @@
     <!-- Cabeçalho / Navbar -->
     <header class="header">
         <nav class="nav-container">
-            <div class="logo" data-pt="Olá, eu sou Arlen" data-en="Hello, I'm Arlen">Olá, eu sou Arlen</div>
+            <div class="logo" data-pt="Olá, eu sou Arlen" data-en="Hello, I'm Arlen">&lt;A /&gt;</div>
             <ul class="nav-menu">
                 <li><a href="#home" data-pt="Home" data-en="Home">Home</a></li>
                 <li><a href="#about" data-pt="Sobre Mim" data-en="About Me">Sobre Mim</a></li>
@@ -19,7 +19,7 @@
                 <li><a href="#idiomas" data-pt="Idiomas" data-en="Languages">Idiomas</a></li>
                 <li><a href="#projects" data-pt="Projetos" data-en="Projects">Projetos</a></li>
                 <li><a href="#contact" data-pt="Contato" data-en="Contact">Contato</a></li>
-                <li><button class="theme-toggle" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button></li>
+                <li><button class="theme-toggle container" id="themeToggle" aria-label="Alternar tema" title="Alternar tema"><img src="assets/icons/lua.gif" alt="" width="32" height="32"></button></li>
                 <li><button class="lang-toggle" id="langToggle" aria-label="Alterar idioma" title="Alterar idioma">EN</button></li>
             </ul>
             <div class="mobile-menu-toggle" id="mobileToggle" aria-label="Menu mobile" role="button" tabindex="0">
@@ -38,16 +38,16 @@
                 <h2 data-pt="Desenvolvedor Web | Analista de Dados & Financeiro | Especialista em BI" data-en="Web Developer | Data & Financial Analyst | BI Specialist">Desenvolvedor Web | Analista de Dados & Financeiro | Especialista em BI</h2>
                 <p data-pt="Transformo dados e ideias em soluções digitais e insights estratégicos." data-en="I transform data and ideas into digital solutions and strategic insights.">Transformo dados e ideias em soluções digitais e insights estratégicos.</p>
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary" data-pt="Ver Projetos" data-en="View Projects">Ver Projetos</a>
-                    <a href="#contact" class="btn btn-outline" data-pt="Entrar em Contato" data-en="Get In Touch">Entrar em Contato</a>
-                    <button 
-                        class="btn btn-cv" 
-                        id="downloadCV" 
-                        data-pt="Baixar CV" 
+                    <a href="#projects" class="btn btn-primary" data-pt="Ver Projetos" data-en="View Projects"><img src="/assets/icons/projects.svg" alt="app" width="32" height="32">Ver Projetos</a>
+                    <a href="#contact" class="btn btn-primary" data-pt="Entrar em Contato" data-en="Get In Touch"><img src="/assets/icons/email.svg" alt="email" width="32" height="32">Entrar em Contato</a>
+                    <button
+                        class="btn btn-cv"
+                        id="downloadCV"
+                        data-pt="Baixar CV"
                         data-en="Download Resume"
                         aria-label="Baixar currículo em PDF"
                         title="Baixar currículo em PDF">
-                        <span class="cv-icon" aria-hidden="true"><img src="/assets/resume.svg" alt="" width="32" height="32"></span>
+                        <span class="cv-icon" aria-hidden="true"><img src="/assets/icons/resume_cv.svg" alt="curriculo" width="32" height="32"></span>
                         Baixar CV
                     </button>
                 </div>
@@ -72,7 +72,7 @@
             </div>
             <div class="hero-image">
                 <div class="profile-container">
-                    <img src="" alt="Foto de perfil de Arlen" class="profile-image">
+                    <img src="/assets/profile_img/arlen_profile.jpeg" alt="Foto de perfil de Arlen" class="profile-image">
                     <div class="code-decoration top-right" aria-hidden="true">&lt;/&gt;</div>
                     <div class="code-decoration bottom-left" aria-hidden="true">&lt;/&gt;</div>
                 </div>
@@ -84,7 +84,7 @@
     <section id="about" class="section fade-in">
         <h2 data-pt="Sobre Mim" data-en="About Me">Sobre Mim</h2>
         <div class="about-content">
-            <img src="arlen3.jpg" alt="Imagem sobre Arlen" class="about-image">
+            <img src="/assets/profile_img/arlen_about.jpeg" alt="Imagem sobre Arlen" class="about-image">
             <div class="about-text">
                 <p data-pt="Sou formado em Desenvolvimento Web & Full Stack pela Trybe e atualmente estudo Tecnologia em Ciência de Dados na Uninter, me aprofundando em análise de dados, BI e finanças. Minha paixão é criar soluções digitais que unem design, performance e inteligência baseada em dados." data-en="I graduated in Web Development & Full Stack from Trybe and am currently studying Technology in Data Science at Uninter, deepening my knowledge in data analysis, BI and finance. My passion is creating digital solutions that unite design, performance and data-driven intelligence.">Sou formado em Desenvolvimento Web & Full Stack pela Trybe e atualmente estudo Tecnologia em Ciência de Dados na Uninter, me aprofundando em análise de dados, BI e finanças. Minha paixão é criar soluções digitais que unem design, performance e inteligência baseada em dados.</p>
                 <p data-pt="Minha jornada na programação começou há alguns anos, e desde então tenho me dedicado a aprender continuamente e aplicar as melhores práticas de desenvolvimento. Tenho experiência sólida em HTML, CSS, JavaScript e frameworks modernos como React. Paralelamente, aplico conhecimentos em análise de dados, finanças e BI para gerar insights estratégicos e decisões mais assertivas." data-en="My programming journey began a few years ago, and since then I have dedicated myself to continuous learning and applying development best practices. I have solid experience in HTML, CSS, JavaScript and modern frameworks like React. In parallel, I apply knowledge in data analysis, finance and BI to generate strategic insights and more assertive decisions.">Minha jornada na programação começou há alguns anos, e desde então tenho me dedicado a aprender continuamente e aplicar as melhores práticas de desenvolvimento. Tenho experiência sólida em HTML, CSS, JavaScript e frameworks modernos como React. Paralelamente, aplico conhecimentos em análise de dados, finanças e BI para gerar insights estratégicos e decisões mais assertivas.</p>
@@ -144,7 +144,7 @@
         <h2 data-pt="Habilidades & Formação" data-en="Skills & Education">Habilidades & Formação</h2>
         <div class="skills-grid">
             <div class="skill-card">
-                <div class="skill-icon" aria-hidden="true"><img src="/assets/design.svg" alt="" width="32" height="32"></div>
+                <div class="skill-icon" aria-hidden="true"><img src="/assets/icons/ux_ui.gif" alt="" width="32" height="32"></div>
                 <div class="skill-title" data-pt="UI/UX Design" data-en="UI/UX Design">UI/UX Design</div>
                 <div class="skill-description" data-pt="Design de interfaces modernas e experiências de usuário intuitivas" data-en="Modern interface design and intuitive user experiences">Design de interfaces modernas e experiências de usuário intuitivas, Canva & Figma</div>
                 <div class="skill-progress">
@@ -154,7 +154,7 @@
                 </div>
             </div>
             <div class="skill-card">
-                <div class="skill-icon" aria-hidden="true"><img src="/assets/frontend.svg" alt="" width="32" height="32"></div>
+                <div class="skill-icon" aria-hidden="true"><img src="/assets/icons/frontend.gif" alt="" width="32" height="32"></div>
                 <div class="skill-title" data-pt="Frontend Development" data-en="Frontend Development">Frontend Development</div>
                 <div class="skill-description" data-pt="HTML, CSS, JavaScript, React e outras tecnologias modernas" data-en="HTML, CSS, JavaScript, React and other modern technologies">HTML, CSS, JavaScript, React e outras tecnologias modernas</div>
                 <div class="skill-progress">
@@ -164,7 +164,7 @@
                 </div>
             </div>
             <div class="skill-card">
-                <div class="skill-icon" aria-hidden="true"><img src="/assets/grafics.svg" alt="" width="32" height="32"></div>
+                <div class="skill-icon" aria-hidden="true"><img src="/assets/icons/analises_dados.gif" alt="" width="32" height="32"></div>
                 <div class="skill-title" data-pt="Análise de Dados & BI" data-en="Data Analysis & BI">Análise de Dados & BI</div>
                 <div class="skill-description" data-pt="Python, R, SQL, Power BI, Tableau para análise e visualização de dados" data-en="Python, R, SQL, Power BI, Tableau for data analysis and visualization">Python, R, SQL, Power BI, Excel, Tableau para análise e visualização de dados</div>
                 <div class="skill-progress">
@@ -174,17 +174,17 @@
                 </div>
             </div>
             <div class="skill-card">
-                <div class="skill-icon" aria-hidden="true"><img src="/assets/robot_ai.svg" alt="" width="32" height="32"></div>
-                <div class="skill-title" data-pt="Responsive Design" data-en="Responsive Design">Automação Agent IA</div>
+                <div class="skill-icon" aria-hidden="true"><img src="/assets/icons/automation.gif" alt="" width="32" height="32"></div>
+                <div class="skill-title" data-pt="Automação Agente IA" data-en="AI Agent Automation">Automação Agente IA</div>
                 <div class="skill-description" data-pt="Criação de agentes de IA" data-en="Creating AI agents">Criação de agentes de IA</div>
                 <div class="skill-progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-label="Responsive Design: 88%">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-label="AI Agent Automation: 88%">
                         <div class="progress-fill" style="width: 88%"></div>
                     </div>
                 </div>
             </div>
             <div class="skill-card">
-                <div class="skill-icon" aria-hidden="true"><img src="/assets/backend.svg" alt="" width="32" height="32"></div>
+                <div class="skill-icon" aria-hidden="true"><img src="/assets/icons/backend.gif" alt="" width="32" height="32"></div>
                 <div class="skill-title" data-pt="Backend Development" data-en="Backend Development">Backend Development</div>
                 <div class="skill-description" data-pt="Desenvolvimento de APIs e integração de sistemas" data-en="API development and system integration">Consumo de APIs e integração de sistemas</div>
                 <div class="skill-progress">
@@ -194,7 +194,7 @@
                 </div>
             </div>
             <div class="skill-card">
-                <div class="skill-icon" aria-hidden="true"><img src="/assets/finance.svg" alt="" width="32" height="32"></div>
+                <div class="skill-icon" aria-hidden="true"><img src="/assets/icons/investimento.gif" alt="" width="32" height="32"></div>
                 <div class="skill-title" data-pt="Análise Financeira" data-en="Financial Analysis">Análise Financeira</div>
                 <div class="skill-description" data-pt="Modelagem financeira, análise de investimentos e gestão de riscos" data-en="Financial modeling, investment analysis and risk management">Modelagem financeira, análise de investimentos e gestão de riscos</div>
                 <div class="skill-progress">
@@ -210,7 +210,7 @@
         <h2 data-pt="Formação Educacional" data-en="Educational Background">Formação Educacional</h2>
         <div class="education-grid">
             <div class="education-card">
-                <div class="education-icon" aria-hidden="true"><img src="/assets/graduation.svg" alt="Graduation Cap" width="62" height="62"></div>
+                <div class="education-icon" aria-hidden="true"><img src="/assets/icons/graduacao_uninter.gif" alt="Graduation Cap" width="62" height="62"></div>
                 <div class="education-content">
                     <h4 class="education-title" data-pt="Tecnologia em Ciência de Dados" data-en="Technology in Data Science">Tecnologia em Ciência de Dados</h4>
                     <div class="education-institution" data-pt="Uninter" data-en="Uninter">Uninter</div>
@@ -220,7 +220,7 @@
             </div>
             
             <div class="education-card">
-                <div class="education-icon" aria-hidden="true"><img src="/assets/boy.svg" alt="Coding Icon" width="62" height="62"></div>
+                <div class="education-icon" aria-hidden="true"><img src="/assets/icons/graduacao_trybe.gif" alt="Coding Icon" width="62" height="62"></div>
                 <div class="education-content">
                     <h4 class="education-title" data-pt="Desenvolvimento Web & Full Stack" data-en="Web Development & Full Stack">Desenvolvimento Web & Full Stack</h4>
                     <div class="education-institution" data-pt="Trybe" data-en="Trybe">Trybe</div>
@@ -236,7 +236,7 @@
         <h2 data-pt="Idiomas" data-en="Languages">Idiomas</h2>
         <div class="languages-grid">
             <div class="language-card">
-                <div class="language-flag" aria-hidden="true">🇧🇷</div>
+                <div class="language-flag" aria-hidden="true"><img src="/assets/icons/brasil.gif" alt="Bandeira do Brasil" width="52" height="52"></div>
                 <div class="language-content">
                     <h4 class="language-name" data-pt="Português" data-en="Portuguese">Português</h4>
                     <div class="language-level native" data-pt="Nativo" data-en="Native">Nativo</div>
@@ -249,7 +249,7 @@
             </div>
             
             <div class="language-card">
-                <div class="language-flag" aria-hidden="true">🇺🇸</div>
+                <div class="language-flag" aria-hidden="true"><img src="/assets/icons/eua.gif" alt="Bandeira dos EUA" width="52" height="52"></div>
                 <div class="language-content">
                     <h4 class="language-name" data-pt="Inglês" data-en="English">Inglês</h4>
                     <div class="language-level advanced" data-pt="Avançado" data-en="Advanced">Avançado</div>
@@ -262,7 +262,7 @@
             </div>
             
             <div class="language-card">
-                <div class="language-flag" aria-hidden="true">🇪🇸</div>
+                <div class="language-flag" aria-hidden="true"><img src="/assets/icons/espanha.gif" alt="Bandeira da Espanha" width="52" height="52"></div>
                 <div class="language-content">
                     <h4 class="language-name" data-pt="Espanhol" data-en="Spanish">Espanhol</h4>
                     <div class="language-level basic" data-pt="Básico" data-en="Basic">Básico</div>
@@ -316,7 +316,7 @@
             <article class="project-card">
                 <div class="project-image" aria-hidden="true"></div>
                 <div class="project-content">
-                    <h3 class="project-title" data-pt="" data-en="">Sistema Web Interativo</h3>
+                    <h3 class="project-title" data-pt="" data-en="">A definir</h3>
                     <p class="project-description" data-pt="" data-en="">A definir.</p>
                     <div class="project-tech">
                         <span class="tech-tag">x</span>
@@ -333,7 +333,7 @@
             <article class="project-card">
                 <div class="project-image" aria-hidden="true"></div>
                 <div class="project-content">
-                    <h3 class="project-title" data-pt="" data-en="">Sistema Web Interativo</h3>
+                    <h3 class="project-title" data-pt="" data-en="">A definir</h3>
                     <p class="project-description" data-pt="" data-en="">A definir.</p>
                     <div class="project-tech">
                         <span class="tech-tag">x</span>
@@ -350,7 +350,7 @@
             <article class="project-card">
                 <div class="project-image" aria-hidden="true"></div>
                 <div class="project-content">
-                    <h3 class="project-title" data-pt="" data-en="">Sistema Web Interativo</h3>
+                    <h3 class="project-title" data-pt="" data-en="">A definir</h3>
                     <p class="project-description" data-pt="" data-en="">A definir.</p>
                     <div class="project-tech">
                         <span class="tech-tag">x</span>
@@ -367,7 +367,7 @@
             <article class="project-card">
                 <div class="project-image" aria-hidden="true"></div>
                 <div class="project-content">
-                    <h3 class="project-title" data-pt="" data-en="">Sistema Web Interativo</h3>
+                    <h3 class="project-title" data-pt="" data-en="">A definir</h3>
                     <p class="project-description" data-pt="" data-en="">A definir.</p>
                     <div class="project-tech">
                         <span class="tech-tag">x</span>
@@ -381,6 +381,59 @@
                     </div>
                 </div>
             </article>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contact" class="section fade-in">
+        <h2 data-pt="Contato" data-en="Contact">Contato</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3 data-pt="Vamos trabalhar juntos?" data-en="Let's work together?">Vamos trabalhar juntos?</h3>
+                <p data-pt="Estou sempre aberto a novas oportunidades e projetos interessantes. Entre em contato comigo e vamos conversar sobre como posso ajudar a transformar suas ideias em realidade." data-en="I'm always open to new opportunities and interesting projects. Contact me and let's talk about how I can help transform your ideas into reality.">Estou sempre aberto a novas oportunidades e projetos interessantes. Entre em contato comigo e vamos conversar sobre como posso ajudar a transformar suas ideias em realidade.</p>
+
+                <!-- CV Download Button na seção de contato -->
+                <div class="cv-download-section">
+                    <p data-pt="Interessado no meu perfil completo?" data-en="Interested in my complete profile?">
+                        <strong data-pt="Interessado no meu perfil completo?" data-en="Interested in my complete profile?">Interessado no meu perfil completo?</strong>
+                    </p>
+                    <button 
+                        class="btn btn-cv btn-cv-secondary" 
+                        id="downloadCVContact" 
+                        data-pt="Baixar Meu Currículo" 
+                        data-en="Download My Resume"
+                        aria-label="Baixar currículo completo em PDF"
+                        title="Baixar currículo completo em PDF">
+                        <span class="cv-icon" aria-hidden="true"><img src="/assets/icons/resume_cv.svg" alt="curriculum" width="32" height="32"></span>
+                        Baixar Meu Currículo
+                    </button>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/arlenfreitas" target="_blank"class="social-link" title="LinkedIn" aria-label="Perfil no LinkedIn"><img src="assets/icons/linkedin.svg" alt="LinkedIn" width="32" height="32"></a>
+                    <a href="https://github.com/arlendfs" target="_blank" class="social-link" title="GitHub" aria-label="Perfil no GitHub"><img src="assets/icons/github.svg" alt="GitHub" width="32" height="32"></a>
+                    <a href="https://instagram.com/arlendfs" target="_blank" class="social-link" title="Instagram" aria-label="Perfil no Instagram"><img src="assets/icons/instagram.svg" alt="Instagram" width="32" height="32"></a>
+                    <a href="https://wa.me/5538998108493" target="_blank" class="social-link" title="WhatsApp" aria-label="Perfil no WhatsApp"><img src="assets/icons/whatsapp.svg" alt="WhatsApp" width="32" height="32"></a>
+                </div>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name" data-pt="Nome" data-en="Name">Nome</label>
+                    <input type="text" id="name" name="name" required aria-describedby="name-help">
+                    <small id="name-help" class="form-help" data-pt="Digite seu nome completo" data-en="Enter your full name">Digite seu nome completo</small>
+                </div>
+                <div class="form-group">
+                    <label for="email" data-pt="Email" data-en="Email">Email</label>
+                    <input type="email" id="email" name="email" required aria-describedby="email-help">
+                    <small id="email-help" class="form-help" data-pt="Digite um email válido" data-en="Enter a valid email">Digite um email válido</small>
+                </div>
+                <div class="form-group">
+                    <label for="message" data-pt="Mensagem" data-en="Message">Mensagem</label>
+                    <textarea id="message" name="message" required data-pt-placeholder="Conte-me sobre seu projeto..." data-en-placeholder="Tell me about your project..." placeholder="Conte-me sobre seu projeto..." aria-describedby="message-help"></textarea>
+                    <small id="message-help" class="form-help" data-pt="Descreva seu projeto ou necessidade" data-en="Describe your project or need">Descreva seu projeto ou necessidade</small>
+                </div>
+                <button type="submit" class="btn btn-primary" data-pt="Enviar Mensagem" data-en="Send Message">Enviar Mensagem</button>
+            </form>
         </div>
     </section>
 </body>
