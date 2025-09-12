@@ -17,7 +17,7 @@
                 <li><a href="#skills" data-pt="Habilidades" data-en="Skills">Habilidades</a></li>
                 <li><a href="#educacional" data-pt="Formação" data-en="Education">Formação</a></li>
                 <li><a href="#idiomas" data-pt="Idiomas" data-en="Languages">Idiomas</a></li>
-                <li><a href="#projects" data-pt="Projetos" data-en="Projects">Projetos</a></li>
+                <li><a href="#portfolio" data-pt="Portfólio" data-en="Portfolio">Portfólio</a></li>
                 <li><a href="#contact" data-pt="Contato" data-en="Contact">Contato</a></li>
                 <li><button class="theme-toggle container" id="themeToggle" aria-label="Alternar tema" title="Alternar tema"><img src="assets/icons/lua.gif" alt="" width="32" height="32"></button></li>
                 <li><button class="lang-toggle" id="langToggle" aria-label="Alterar idioma" title="Alterar idioma">EN</button></li>
@@ -62,8 +62,8 @@
                     <span class="tech-item">MySQL</span>
                     <span class="tech-item">MongoDB</span>
                     <span class="tech-item">PostgreSQL</span>
-                    <span class="tech-item">R</span>
                     <span class="tech-item">Power BI</span>
+                    <span class="tech-item">DAX</span>
                     <span class="tech-item">Tableau</span>
                     <span class="tech-item">Excel</span>
                     <span class="tech-item">N8N</span>
@@ -166,7 +166,7 @@
             <div class="skill-card">
                 <div class="skill-icon" aria-hidden="true"><img src="/assets/icons/analises_dados.gif" alt="" width="32" height="32"></div>
                 <div class="skill-title" data-pt="Análise de Dados & BI" data-en="Data Analysis & BI">Análise de Dados & BI</div>
-                <div class="skill-description" data-pt="Python, R, SQL, Power BI, Tableau para análise e visualização de dados" data-en="Python, R, SQL, Power BI, Tableau for data analysis and visualization">Python, R, SQL, Power BI, Excel, Tableau para análise e visualização de dados</div>
+                <div class="skill-description" data-pt="Python, R, SQL, Power BI, Tableau para análise e visualização de dados" data-en="Python, R, SQL, Power BI, Tableau for data analysis and visualization">Python, SQL, Power BI, Dax, Excel, Tableau para análise e visualização de dados</div>
                 <div class="skill-progress">
                     <div class="progress-bar" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" aria-label="Análise de Dados & BI: 82%">
                         <div class="progress-fill" style="width: 82%"></div>
@@ -276,108 +276,113 @@
         </div>
     </section>
 
-    <!-- Seção Projetos -->
-    <section id="projects" class="section fade-in">
-        <h2 data-pt="Projetos" data-en="Projects">Projetos</h2>
+    <!-- Seção Portfólio / Projetos -->
+    <section id="portfolio" class="section fade-in">
+        <h2 data-pt="Portfólio" data-en="Portfolio">Portfólio</h2>
         <div class="projects-grid">
             <article class="project-card">
-                <div class="project-image" aria-hidden="true"><img src="" alt=""></div>
+                <div class="project-image" aria-hidden="true"><img src="/assets/projects/pixel_art.png" alt="pixel_art"></div>
                 <div class="project-content">
-                    <h3 class="project-title" data-pt="" data-en="">A definir</h3>
-                    <p class="project-description" data-pt="." data-en="">Descrição a definir.</p>
+                    <h3 class="project-title" data-pt="Projeto Pixel Art" data-en="Pixel Art Project">Projeto Pixel Art</h3>
+                    <p class="project-description" data-pt="Crie suas próprias artes em pixel com esta ferramenta de desenho interativa. Escolha cores de uma paleta dinâmica, preencha a grade e dê vida às suas ideias, pixel por pixel." data-en="Create your own pixel art with this interactive drawing tool. Choose colors from a dynamic palette, fill the grid, and bring your ideas to life, pixel by pixel.">Crie suas próprias artes em pixel com esta ferramenta de desenho interativa. Escolha cores de uma paleta dinâmica, preencha a grade e dê vida às suas ideias, pixel por pixel.</p>
                     <div class="project-tech">
-                        <span class="tech-tag">x</span>
-                        <span class="tech-tag">x</span>
-                        <span class="tech-tag">x</span>
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
                     </div>
                     <div class="project-links">
-                        <a href="#" class="btn btn-outline" data-pt="Ver GitHub" data-en="View GitHub" aria-label="Ver código do projeto no GitHub">Ver GitHub</a>
-                        <a href="#" class="btn btn-primary" data-pt="Ver Demo" data-en="View Demo" target ="_blank" aria-label="Ver demonstração do projeto">Ver Demo</a>
+                        <a href="https://github.com/arlendfs/pixel-art" 
+                        class="btn btn-outline" 
+                        data-pt="Ver GitHub" 
+                        data-en="View GitHub" 
+                        aria-label="Ver código do projeto no GitHub"
+                        target="_blank" 
+                        rel="noopener noreferrer">
+                        Ver GitHub
+                        </a>
+
+                        <a href="https://pixel-art-coral.vercel.app/" 
+                        class="btn btn-primary" 
+                        data-pt="Ver Demo" 
+                        data-en="View Demo" 
+                        aria-label="Ver demonstração do projeto"
+                        target="_blank" 
+                        rel="noopener noreferrer">
+                        Ver Demo
+                        </a>
                     </div>
                 </div>
             </article>
             <article class="project-card">
-                <div class="project-image" aria-hidden="true"><img src="" alt=""></div>
+                <div class="project-image" aria-hidden="true"><img src="/assets/projects/pomodoro.png" alt="pomodoro time pro"></div>
                 <div class="project-content">
-                    <h3 class="project-title" data-pt="" data-en="A">A definir</h3>
-                    <p class="project-description" data-pt="" data-en="">Descrição a definir.</p>
+                    <h3 class="project-title" data-pt="Pomodoro Time Pro" data-en="Pomodoro Timer Pro">Pomodoro Timer Pro</h3>
+                    <p class="project-description" data-pt="Aumente sua produtividade com este temporizador Pomodoro completo. Personalize os tempos de trabalho e pausa, acompanhe suas sessões e mantenha o foco para alcançar seus objetivos com mais eficiência." data-en="Boost your productivity with this full-featured Pomodoro timer. Customize your work and break times, track your sessions, and stay focused to achieve your goals more efficiently.">Aumente sua produtividade com este temporizador Pomodoro completo. Personalize os tempos de trabalho e pausa, acompanhe suas sessões e mantenha o foco para alcançar seus objetivos com mais eficiência.</p>
                     <div class="project-tech">
-                        <span class="tech-tag">x</span>
-                        <span class="tech-tag">x </span>
-                        <span class="tech-tag">x</span>
-                        <span class="tech-tag">x</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Streamlit</span>
+                        <span class="tech-tag">Plotly</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">NumPy</span>
                     </div>
                     <div class="project-links">
-                        <a href="#" class="btn btn-outline" data-pt="Ver GitHub" data-en="View GitHub" aria-label="Ver código do projeto no GitHub">Ver GitHub</a>
-                        <a href="#" class="btn btn-primary" data-pt="Ver Demo" data-en="View Demo" target ="_blank" aria-label="Ver demonstração do projeto">Ver Demo</a>
+                        <a href="https://github.com/arlendfs/Pomodoro_God" 
+                        class="btn btn-outline" 
+                        data-pt="Ver GitHub" 
+                        data-en="View GitHub" 
+                        aria-label="Ver código do projeto no GitHub"
+                        target="_blank" 
+                        rel="noopener noreferrer">
+                        Ver GitHub
+                        </a>
+
+                        <a href="https://pomodoro-god.streamlit.app/" 
+                        class="btn btn-primary" 
+                        data-pt="Ver Demo" 
+                        data-en="View Demo" 
+                        aria-label="Ver demonstração do projeto"
+                        target="_blank" 
+                        rel="noopener noreferrer">
+                        Ver Demo
+                        </a>
                     </div>
                 </div>
             </article>
-            <article class="project-card">
-                <div class="project-image" aria-hidden="true"></div>
-                <div class="project-content">
-                    <h3 class="project-title" data-pt="" data-en="">A definir</h3>
-                    <p class="project-description" data-pt="" data-en="">A definir.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">x</span>
-                        <span class="tech-tag">x</span>
-                        <span class="tech-tag">x</span>
-                        <span class="tech-tag">x</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="btn btn-outline" data-pt="Ver GitHub" data-en="View GitHub" aria-label="Ver código do projeto no GitHub">Ver GitHub</a>
-                        <a href="#" class="btn btn-primary" data-pt="Ver Demo" data-en="View Demo" target ="_blank"aria-label="Ver demonstração do projeto">Ver Demo</a>
-                    </div>
-                </div>
-            </article>
-            <article class="project-card">
-                <div class="project-image" aria-hidden="true"></div>
-                <div class="project-content">
-                    <h3 class="project-title" data-pt="" data-en="">A definir</h3>
-                    <p class="project-description" data-pt="" data-en="">A definir.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">x</span>
-                        <span class="tech-tag">x</span>
-                        <span class="tech-tag">x</span>
-                        <span class="tech-tag">x</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="btn btn-outline" data-pt="Ver GitHub" data-en="View GitHub" aria-label="Ver código do projeto no GitHub">Ver GitHub</a>
-                        <a href="#" class="btn btn-primary" data-pt="Ver Demo" data-en="View Demo" target ="_blank"aria-label="Ver demonstração do projeto">Ver Demo</a>
-                    </div>
-                </div>
-            </article>
-            <article class="project-card">
-                <div class="project-image" aria-hidden="true"></div>
-                <div class="project-content">
-                    <h3 class="project-title" data-pt="" data-en="">A definir</h3>
-                    <p class="project-description" data-pt="" data-en="">A definir.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">x</span>
-                        <span class="tech-tag">x</span>
-                        <span class="tech-tag">x</span>
-                        <span class="tech-tag">x</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="btn btn-outline" data-pt="Ver GitHub" data-en="View GitHub" aria-label="Ver código do projeto no GitHub">Ver GitHub</a>
-                        <a href="#" class="btn btn-primary" data-pt="Ver Demo" data-en="View Demo" target ="_blank"aria-label="Ver demonstração do projeto">Ver Demo</a>
-                    </div>
-                </div>
-            </article>
+            
             <article class="project-card">
                 <div class="project-image" aria-hidden="true"></div>
                 <div class="project-content">
-                    <h3 class="project-title" data-pt="" data-en="">A definir</h3>
-                    <p class="project-description" data-pt="" data-en="">A definir.</p>
+                    <h3 class="project-title" data-pt="Dashboard Financeiro" data-en="Financial Dashboard">Dashboard Financeiro</h3>
+                    <p class="project-description" data-pt="Um painel interativo para visualização de dados financeiros." data-en="An interactive dashboard for visualizing financial data.">Um painel interativo para visualização de dados financeiros.</p>
                     <div class="project-tech">
-                        <span class="tech-tag">x</span>
-                        <span class="tech-tag">x</span>
-                        <span class="tech-tag">x</span>
-                        <span class="tech-tag">x</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Streamlit</span>
+                        <span class="tech-tag">yFinance</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">Scikit-learn</span>
+                        <span class="tech-tag">Plotly</span>
+                        <span class="tech-tag">NumPy</span>
                     </div>
                     <div class="project-links">
-                        <a href="#" class="btn btn-outline" data-pt="Ver GitHub" data-en="View GitHub" aria-label="Ver código do projeto no GitHub">Ver GitHub</a>
-                        <a href="#" class="btn btn-primary" data-pt="Ver Demo" data-en="View Demo" target ="_blank"aria-label="Ver demonstração do projeto">Ver Demo</a>
+                        <a href="https://dashboard-financeiro-python.streamlit.app/" 
+                        class="btn btn-outline" 
+                        data-pt="Ver GitHub" 
+                        data-en="View GitHub" 
+                        aria-label="Ver código do projeto no GitHub"
+                        target="_blank" 
+                        rel="noopener noreferrer">
+                        Ver GitHub
+                        </a>
+
+                        <a href="https://github.com/arlendfs/dashboard-financeiro-python" 
+                        class="btn btn-primary" 
+                        data-pt="Ver Demo" 
+                        data-en="View Demo" 
+                        aria-label="Ver demonstração do projeto"
+                        target="_blank" 
+                        rel="noopener noreferrer">
+                        Ver Demo
+                        </a>
                     </div>
                 </div>
             </article>
@@ -436,5 +441,11 @@
             </form>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p data-pt="© 2025 ARLEN. Todos os direitos reservados. Desenvolvido com coracao.gif" data-en="© 2025 ARLEN. All rights reserved. Developed with heart.gif">&copy; 2025 ARLEN. Todos os direitos reservados. Desenvolvido com</p>
+         <span><img src="/assets/icons/coracao.gif" alt="coracao" width="42" height="42"></span>
+    </footer>
 </body>
 </html>
