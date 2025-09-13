@@ -508,3 +508,71 @@ body {
     font-weight: bold;
     margin-bottom: 1rem;
 }
+
+/* Seção Habilidades */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.skill-card {
+    align-items: center;
+    background: var(--surface-color);
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    padding: 2rem;
+}
+
+.skill-card:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-5px);
+}
+
+.skill-icon {
+    align-items: center;
+    background: var(--gradient);
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    font-size: 1.5rem;
+    height: 60px;
+    justify-content: center;
+    margin-bottom: 1rem;
+    width: 60px;
+}
+
+.skill-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.skill-description {
+    color: var(--text-secondary);
+    line-height: 1.5;
+    text-align: center;
+}
+
+.skill-progress {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.progress-bar {
+    border-radius: 3px;
+    background: var(--border-color);
+    height: 6px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.progress-fill {
+    background: var(--gradient);
+    border-radius: 3px;
+    height: 100%;
+    transition: width 1s ease;
+}
