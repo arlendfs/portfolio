@@ -679,3 +679,90 @@ body {
     margin: 0;
     text-align: center;
 }
+
+/* Estilos para idiomas */
+.languages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.language-card {
+    align-items: center;
+    background: var(--surface-color);
+    border-radius: 15px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.language-card:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+.language-flag {
+    align-items: center;
+    background: var(--gradient);
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    font-size: 1.5rem;
+    height: 65px;
+    justify-content: center;
+    margin-bottom: 1rem;
+    width: 65px;
+}
+
+.language-name {
+    color: var(--text-color);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.language-level {
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    padding: 0.3rem 1rem;
+}
+
+.language-level.native {
+    color: white;
+    background: linear-gradient(135deg, #4CAF50, #45a049);
+}
+
+.language-level.advanced {
+    color: white;
+    background: linear-gradient(135deg, #2196F3, #1976D2);
+}
+
+
+.language-level.basic {
+    color: white;
+    background: linear-gradient(135deg, #FF9800, #F57C00);
+}
+
+.language-progress {
+    margin-top: 1rem;
+}
+
+.native-fill {
+    background: linear-gradient(135deg, #4CAF50, #45a049);
+}
+
+.advanced-fill {
+    background: linear-gradient(135deg, #2196F3, #1976D2);
+}
+
+.basic-fill {
+    background: linear-gradient(135deg, #FF9800, #F57C00);
+}
