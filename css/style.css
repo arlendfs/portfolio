@@ -952,3 +952,17 @@ body {
     font-size: 0.85rem;
     margin-top: 0.25rem;
 }
+
+/* Secção de rodapé */
+.footer {
+    align-items: center;
+    background: var(--surface-color);
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-top: 4rem;
+    padding: 1rem;
+    text-align: center;
+}
