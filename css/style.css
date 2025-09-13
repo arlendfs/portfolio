@@ -485,16 +485,16 @@ body {
 }
 
 .experience-item::before {
+    border: 3px solid var(--bg-color);
+    background: var(--primary-color);
+    border-radius: 50%;
     content: '';
-    position: absolute;
     left: -4.5rem;
+    height: 15px;
+    position: absolute;
     top: 50%;
     transform: translateY(-50%);
     width: 15px;
-    height: 15px;
-    background: var(--primary-color);
-    border-radius: 50%;
-    border: 3px solid var(--bg-color);
 }
 
 .experience-date {
@@ -575,4 +575,107 @@ body {
     border-radius: 3px;
     height: 100%;
     transition: width 1s ease;
+}
+
+/* Seção Subtítulo */
+.subsection {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 2rem 2rem;
+}
+
+.subsection h2 {
+    color: var(--text-color);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    position: relative;
+    text-align: center;
+}
+
+.subsection h2::after {
+    border-radius: 2px;
+    background: var(--gradient);
+    bottom: -10px;
+    content: '';
+    left: 50%;
+    height: 3px;
+    transform: translateX(-50%);
+    position: absolute;
+    width: 80px;
+}
+
+/* Estilos para formação educacional */
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.education-card {
+    align-items: center;
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    transition: all 0.3s ease;
+}
+
+.education-card:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+.education-icon {
+    align-items: center;
+    background: var(--gradient);
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    font-size: 1.5rem;
+    height: 65px;
+    justify-content: center;
+    margin-bottom: 1rem;
+    width: 65px;
+}
+
+.education-content {
+    flex: 1;
+}
+
+.education-title {
+    color: var(--text-color);
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.education-institution {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    text-align: center;
+}
+
+.education-period {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.education-description {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+    text-align: center;
 }
