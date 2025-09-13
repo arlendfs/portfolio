@@ -275,3 +275,72 @@ body {
     border: 2px solid var(--primary-color);
     box-shadow: 0 4px 15px rgba(0, 212, 255, 0.2);
 }
+
+/* Ícone dentro do botão de download de CV */
+.cv-icon {
+    font-size: 1.1rem;
+    margin-right: 0.3rem;
+}
+
+.cv-download-section {
+    background: var(--surface-color);
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    margin: 2rem 0;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.cv-download-section p {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+/* Imagem da seção Hero */
+.hero-image {
+    animation: fadeInRight 1s ease 0.8s both;
+    display: flex;
+    justify-content: center;
+}
+
+/* Container da imagem de perfil */
+.profile-container {
+    height: 350px;
+    position: relative;
+    width: 350px;
+}
+
+.profile-image {
+    animation: floatY 3s ease-in-out infinite; 
+    border-radius: 50%;
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 0 50px rgba(0, 212, 255, 0.3);
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Decorações de código */
+.code-decoration {
+    background: var(--surface-color);
+    border-radius: 10px;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    font-family: 'Courier New', monospace;
+    font-size: 1.2rem;
+    line-height: 1;
+    position: absolute;
+    padding: 0.5rem;
+}
+
+.code-decoration.top-right {
+    animation: floatY 3s ease-in-out infinite;
+    right: -20px;
+    top: -20px;
+}
+
+.code-decoration.bottom-left {
+    bottom: -20px;
+    left: -20px;
+    animation: floatX 3s ease-in-out infinite;
+}
