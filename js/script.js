@@ -234,3 +234,58 @@ function toggleTheme() {
 if (themeToggle) {
     themeToggle.addEventListener('click', toggleTheme);
 }
+
+// Função menu mobile hambúrguer animado e acessível
+function toggleMobileMenu() {
+    const navMenu = document.querySelector('.nav-menu');
+    const mobileToggle = document.getElementById('mobileToggle');
+
+    navMenu.classList.toggle('active');
+
+    // Atualiza aria-expanded
+    const isOpen = navMenu.classList.contains('active');
+    mobileToggle.setAttribute('aria-expanded', isOpen.toString());
+
+    // Anima o ícone de hambúrguer
+    const spans = mobileToggle.querySelectorAll('span');
+    spans.forEach((span, index) => {
+        if (isOpen) {
+            if (index === 0) span.style.transform = 'rotate(45deg) translate(5px, 5px)';
+            if (index === 1) span.style.opacity = '0';
+            if (index === 2) span.style.transform = 'rotate(-45deg) translate(7px, -6px)';
+        } else {
+            span.style.transform = 'none';
+            span.style.opacity = '1';
+        }
+    });
+}
+
+// Evento no botão mobile
+document.getElementById('mobileToggle').addEventListener('click', toggleMobileMenu);
+
+// Fecha o menu ao clicar em um link (mobile)
+function initializeSmoothScrolling() {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const target = document.querySelector(targetId);
+
+            if (target) {
+                // Fecha menu mobile se aberto
+                const navMenu = document.querySelector('.nav-menu');
+                if (navMenu.classList.contains('active')) {
+                    toggleMobileMenu();
+                }
+
+                // Scroll suave
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+                // Acessibilidade
+                target.focus();
+            }
+        });
+    });
+}
+
+document.addEventListener('DOMContentLoaded', initializeSmoothScrolling);
