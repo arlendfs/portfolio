@@ -201,3 +201,36 @@ function showNotification(message, type = 'info') {
 document.querySelectorAll('#downloadCV, #downloadCVContact').forEach(button => {
     button.addEventListener('click', downloadCV);
 });
+
+// Função de alternância de tema claro/escuro
+const themeToggle = document.getElementById('themeToggle');
+const body = document.body;
+
+function toggleTheme() {
+    body.classList.toggle('light-mode');
+    const isLight = body.classList.contains('light-mode');
+    const themeIcon = themeToggle.querySelector('img');
+
+    // Troca o ícone
+    themeIcon.src = isLight ? 'assets/icons/sol.gif' : 'assets/icons/lua.gif';
+
+    // Atualiza aria-label
+    const ariaLabel = isLight 
+        ? (currentLang === 'pt' ? 'Alternar para tema escuro' : 'Switch to dark theme')
+        : (currentLang === 'pt' ? 'Alternar para tema claro' : 'Switch to light theme');
+    themeToggle.setAttribute('aria-label', ariaLabel);
+
+    // Salva preferência
+    localStorage.setItem('theme', isLight ? 'light' : 'dark');
+
+    // Anúncio para leitores de tela
+    const message = isLight 
+        ? (currentLang === 'pt' ? 'Tema claro ativado' : 'Light theme activated')
+        : (currentLang === 'pt' ? 'Tema escuro ativado' : 'Dark theme activated');
+    announceToScreenReader(message);
+}
+
+// Evento no botão de tema
+if (themeToggle) {
+    themeToggle.addEventListener('click', toggleTheme);
+}
