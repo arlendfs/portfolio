@@ -289,3 +289,52 @@ function initializeSmoothScrolling() {
 }
 
 document.addEventListener('DOMContentLoaded', initializeSmoothScrolling);
+
+// Validação e envio do formulário de contato
+function initializeContactForm() {
+    const contactForm = document.getElementById('contactForm');
+    
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const message = formData.get('message');
+            
+            if (!name || !email || !message) {
+                const errorMessage = currentLang === 'pt' 
+                    ? 'Por favor, preencha todos os campos.' 
+                    : 'Please fill in all fields.';
+                showNotification(errorMessage, 'error');
+                return;
+            }
+            
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                const errorMessage = currentLang === 'pt' 
+                    ? 'Por favor, digite um email válido.' 
+                    : 'Please enter a valid email address.';
+                showNotification(errorMessage, 'error');
+                return;
+            }
+            
+            const successMessage = currentLang === 'pt' 
+                ? 'Obrigado pela sua mensagem! Entrarei em contato em breve.' 
+                : 'Thank you for your message! I will get in touch soon.';
+            
+            showNotification(successMessage, 'success');
+            this.reset();
+
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'contact_form_submit', {
+                    'event_category': 'engagement',
+                    'event_label': 'contact_form'
+                });
+            }
+        });
+    }
+}
+
+document.addEventListener('DOMContentLoaded', initializeContactForm);
