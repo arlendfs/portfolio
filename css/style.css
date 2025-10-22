@@ -1414,7 +1414,7 @@ a:focus:not(:focus-visible) {
 }
 
 /* Ajustes para o badge do Calendly */
-.calendly-badge-content {
+/* .calendly-badge-content {
     position: fixed !important;
     bottom: 20px !important;
     left: 20px !important;
@@ -1426,21 +1426,21 @@ a:focus:not(:focus-visible) {
     align-items: center !important;
     text-align: center !important;
     width: auto !important;
-    min-width: 150px; /* opcional, só pra garantir espaço */
+    min-width: 150px;
     padding: 10px 20px !important;
-}
+} */
 
 /* Ajustes para o chat do Tawk.to */
-#tawkchat-container {
+/* #tawkchat-container {
     bottom: 20px !important;
     right: 20px !important;
     top: auto !important;
     left: auto !important;
     z-index: 9999 !important;
-}
+} */
 
 /* Ajustes para o badge do Tawk.to (quando minimizado) */
-.tawk-button {
+/* .tawk-button {
     background: var(--primary-color) !important;
     border-radius: 50px !important;
     box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3) !important;
@@ -1448,10 +1448,10 @@ a:focus:not(:focus-visible) {
     right: 20px !important;
     left: auto !important;
     top: auto !important;
-}
+} */
 
 /* Ajustes para mobile */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .calendly-badge-content {
         bottom: 30px !important;
         left: 10px !important;
@@ -1461,4 +1461,4 @@ a:focus:not(:focus-visible) {
         bottom: 70px !important;
         right: 10px !important;
     }
-}
+} */
